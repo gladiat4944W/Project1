@@ -1,0 +1,55 @@
+{% load static %}
+<html>
+<head>
+    <title> Pizzas - Dave's Pizza Corner </title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+</head>
+<body><center>
+    <h1>Welcome to the Pizzas Page</h1>
+    <a href="{% url 'index' %}" style="font-size: 40px; font-family: Montserrat; color: red;" >HOME |</a>
+    <a href="{% url 'pizzas' %}" style="font-size: 40px; font-family: Montserrat; color: red;">PIZZAS |</a>
+    <a href="{% url 'deals' %}" style="font-size: 40px; font-family: Montserrat; color: red;">DEALS |</a>
+    <a href="{% url 'orders' %}" style="font-size: 40px; font-family: Montserrat; color: red;">ORDERS |</a>
+    <hr size="5" color="blue">
+    <div>
+      <img src="{% static 'pizza1.jpeg' %}" alt="Mushrooms with Olive Supreme" width="350" height="350"/>
+
+       <h3>MUSHROOMS WITH OLIVE SUPREME</h3>
+       <p>Mushrooms, Olives, Tomatoes, Onions</p>
+       <p>
+         <strong>SMALL:</strong> <em>Rs 399</em>
+         <strong>| MEDIUM:</strong> <em>Rs 799</em>
+         <strong>| LARGE:</strong> <em>Rs 999</em>
+       </p>
+       <hr size="5" color="blue">
+     </div>
+     <div>
+       <img src="{% static 'pizza 2.png' %}" alt="Veggie Supreme" width="350" height="350"/>
+
+       <h3>VEGGIE SUPREME</h3>
+       <p>All veggies loaded</p>
+       <p>
+         <strong>SMALL:</strong> <em>Rs 399</em>
+         <strong>| MEDIUM:</strong> <em>Rs 799</em>
+         <strong>| LARGE:</strong> <em>Rs 999</em>
+       </p>
+       <hr size="5" color="blue">
+     </div>
+     <div>
+       <img src="{% static 'pizza 3.png' %}" alt="Chicken Supreme" width="350" height="350"/>
+
+       <h3>CHICKEN SUPREME</h3>
+       <p>All loaded with chicken popcorn</p>
+       <p>
+         <strong>SMALL:</strong> <em>Rs 399</em>
+         <strong>| MEDIUM:</strong> <em>Rs 799</em>
+         <strong>| LARGE:</strong> <em>Rs 999</em>
+       </p>
+       <hr size="5" color="blue">
+     </div>
+     <b> Copyright 2000@ Dave Pizzas </b>
+     <hr size="5" color="blue"></center>
+   </div>
+ </body>
+</html>
