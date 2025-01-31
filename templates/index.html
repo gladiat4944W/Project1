@@ -4,20 +4,48 @@
     <title> Dave's Pizza Corner </title>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="{% static 'style.css' %}" rel="stylesheet">
+    <script src="{% static 'script.js' %}"></script>
+
+    <style>
+        body {
+            background-color: beige;
+            color: red;
+            text-align: center;
+        }
+        a {
+            font-size: 40px;
+            font-family: Montserrat;
+            color: red;
+            margin: 0 10px;
+        }
+    </style>
+
+    <style>
+        body {
+            background-color: beige;
+            color: red;
+            text-align: center;
+        }
+        a {
+            font-size: 40px;
+            font-family: Montserrat;
+            color: red;
+            margin: 0 10px;
+        }
+    </style>
 </head>
-<body><center>
+<body>
     <h1>Welcome to Dave's Pizza Corner</h1>
-     <p style="font-size: 30px; font-family: Anton;"> Welcome to Lido Pizza Corner </p>
-     <hr size="5" color="blue">
-     <a href="{% url 'index' %}" style="font-size: 40px; font-family: Montserrat; color: red;" >HOME |</a>
-     <a href="{% url 'pizzas' %}" style="font-size: 40px; font-family: Montserrat; color: red;">PIZZAS |</a>
-     <a href="{% url 'deals' %}" style="font-size: 40px; font-family: Montserrat; color: red;">DEALS |</a>
-     <a href="{% url 'orders' %}" style="font-size: 40px; font-family: Montserrat; color: red;">ORDERS |</a>
-     <hr size="5" color="blue">
-     <img src="{% static 'Pizza Banner.jpg' %}" alt="Really Delicious!" width="1024" height="500"/>
-     <hr size="5" color="blue">
-     <b> Copyright 2000@ Dave Pizzas </b>
-     <hr size="5" color="blue"></center>
-   </div>
- </body>
+    <p style="font-size: 30px; font-family: Anton;"> Welcome to Lido Pizza Corner </p>
+    <hr size="5" color="blue">
+    <a href="{% url 'index' %}">HOME</a>
+    <a href="{% url 'pizzas' %}">PIZZAS</a>
+    <a href="{% url 'deals' %}">DEALS</a>
+    <a href="{% url 'orders' %}">ORDERS</a>
+    <hr size="5" color="blue">
+    <img src="{% static 'Pizza Banner.jpg' %}" alt="Really Delicious!" width="1024" height="500"/>
+    <hr size="5" color="blue">
+    <b> Copyright 2000@ Dave Pizzas </b>
+    <hr size="5" color="blue">
+</body>
 </html>
